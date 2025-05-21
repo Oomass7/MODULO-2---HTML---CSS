@@ -1,36 +1,40 @@
-const formulario = document.getElementById('my-form');
+const webhookURL = "https://discord.com/api/webhooks/1374576815116521482/8_y1fBW1z7Q2pKS4KU8iRhH_81kQeUml4wpTR6_o2-O8d8XCYaRxTjggYsj-iAp6HAFf";
 
-formulario.addEventListener('submit', function(event) {
-    event.preventDefault(); // Previene el envío por defecto del formulario
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
 
-    const nombre = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const mensaje = document.getElementById('msg').value;
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-    const webhookUrl = 'https://discordapp.com/api/webhooks/1374576815116521482/8_y1fBW1z7Q2pKS4KU8iRhH_81kQeUml4wpTR6_o2-O8d8XCYaRxTjggYsj-iAp6HAFf'; // Reemplaza con tu URL del webhook
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("msg").value.trim();
 
-    fetch(webhookUrl, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            content: `**Nuevo envío de formulario:**\nNombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`
-        })
-    })
-    .then(response => {
-        if (response.ok) {
-            console.log('Datos enviados a Discord');
-            // Puedes agregar una confirmación al usuario aquí, por ejemplo
-            alert('¡Gracias por tu envío!');
-            formulario.reset(); // Limpiar el formulario
-        } else {
-            console.error('Error al enviar los datos:', response.status);
-            alert('Hubo un error al enviar los datos. Intenta de nuevo.');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Hubo un error al enviar los datos. Intenta de nuevo.');
-    });
+    if (!name || !email || !message) {
+      alert("Por favor completa todos los campos.");
+      return;
+    }
+
+    const payload = {
+      content: `📬 **Nuevo mensaje desde el formulario:**\n\n👤 **Nombre:** ${name}\n📧 **Email:** ${email}\n📝 **Mensaje:** ${message}`
+    };
+
+    try {
+      const response = await fetch(webhookURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      if (response.ok) {
+        alert("Mensaje enviado correctamente ✅");
+        form.reset();
+      } else {
+        alert("Hubo un error al enviar el mensaje ❌");
+      }
+    } catch (error) {
+      console.error("Error al enviar:", error);
+      alert("Error de conexión.");
+    }
+  });
 });
