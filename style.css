@@ -40,6 +40,7 @@ a {
 .mypages {
     text-align: center;
     padding: 20px;
+
 }
 
 .tablepages {
@@ -51,4 +52,59 @@ a {
 
 .activityCV a{
     color: aliceblue;
+}
+
+.divfather {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-style: double;
+    width: 20%;
+    float: left;
+    margin: 10px;
+}
+
+.form input{
+    padding: 5px;
+    margin: 10px;
+}
+
+
+.form textarea{
+    padding: 5px;
+    margin: 10px;
+}
+
+
+.form button{
+    padding: 5px;
+    margin: 10px;
+}
+
+.networks {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-style: double;
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+
+.networks a {
+    color: aliceblue;
+    padding: 5px;
+    margin: 10px;
 }
