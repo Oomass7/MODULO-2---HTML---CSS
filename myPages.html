@@ -4,51 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My pages</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<style>
-    body {
-        margin: 0;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        background-color: linear-gradient(to right, #ff000000, #33ff0000);
-        height: 100vh;
-    }
-    .navigation ul{
-        list-style-type: none;
-        text-align: center;
-        background-color: grey;
-        padding: 0;
-        margin: 0;
-    }
-    .navigation li {
-        text-decoration: none;
-        display: inline-block;
-        padding: 20px;
-        cursor: pointer;
-    }
-    .navigation li:hover {
-        background-color: rgb(41, 43, 44);
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    .myimage {
-        padding: 10px;
-        float: right;
 
-    }
-    .aboutme {
-        text-align: center;
-        padding: 30px;
-    }
-
-    .mypages {
-        text-align: center;
-        padding: 20px;
-    }
-
-
-</style>
 <body>
     <nav class="navigation">
         <ul>
@@ -56,18 +14,24 @@
             <li><a href="./myPages.html">My pages</a></li>
         </ul>
     </nav>
-    <div class="myimage">
-        <img src="./images/Gemini_Generated_Image_hgx6i4hgx6i4hgx6.png" width="200">
-    </div>
-    <div class="aboutme">
-        <h1>About me</h1>
-        <p>Hello, my name is Tomas Loaiza. I am 20 years old. I am 
-        software developer. I am a guy happy, responsible, dedicated, and eager to get ahead.</p>
-        <p>I am currently training to become a junior software developer thanks to the opportunity RIWI has given me. </p>
-    </div>
     <div class="mypages">
         <h2>My pages</h2>
-        <table border="1" align="center">
+        <div>
+            <table align="center" border="1" class="activityCV">
+                <tr>
+                    <th><a href="./cv.html">Hoja de vida</a></th>
+                </tr>
+                <tr>
+                    <td><a href="./cv.html"><img src="./images/index hoja de vida.jpg" width="200"></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!--        <table class="tablepages">
             <thead>
                 <tr>
                     <td><a href="./cv.html"><img src="./images/index hoja de vida.jpg" width="200"></a></td>
@@ -78,8 +42,4 @@
                     <td><a href="./cv.html">Hoja de vida</a></td>
                 </tr>
             </tbody>
-        </table>
-
-    </div>
-</body>
-</html>
+        </table>-->
