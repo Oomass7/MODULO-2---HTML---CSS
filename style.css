@@ -43,11 +43,12 @@ a {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
     background-color: #232db9;
+    margin: 0 20px;
 }
 
 .navigation li:hover {
     background: radial-gradient( rgb(73, 188, 255), black);
-    box-shadow: 2px 2px 20px 1px rgb(0, 0, 0), -2px -2px 20px 1px rgb(2, 2, 2);
+    box-shadow: 2px 2px 20px 1px rgb(245, 245, 245), -2px -2px 20px 1px rgb(2, 2, 2);
     transform: scale(1.05);
 }
 
