@@ -6,12 +6,17 @@
     font-style: normal;
 }
 
+html, body{
+    height: 100%;
+}
+
 body {
     margin: 0;
     background-attachment: fixed;
     background-size: 100% 100%;
-    height: 100vh;
+
     color: aliceblue;
+    
 }
 
 a {
@@ -24,12 +29,18 @@ input::placeholder {
     color: #000000;
 }
 
+.navigation {
+    background-color: rgb(3, 3, 3);
+}
+
 .navigation ul{
     list-style-type: none;
     text-align: center;
-    background-color: rgb(3, 3, 3);
+    border-radius: 10px;
+    border: 2px solid white;
     padding: 0;
     margin: 0;
+    padding: 5px;
 }
 .navigation li {
     text-decoration: none;
@@ -38,10 +49,11 @@ input::placeholder {
     cursor: pointer;
     border: 2px solid white;
     border-radius: 20px;
+    background-color: #232db9;
 }
 
 .navigation li:hover {
-    background-color: blue;
+    background: radial-gradient( rgb(73, 188, 255), black);
     transform: scale(1.05);
 }
 
@@ -49,7 +61,7 @@ input::placeholder {
     text-align: left;
     gap: 20px;  
     padding: 30px;
-    background: linear-gradient( blue, black);
+    background: linear-gradient( rgb(73, 188, 255), black);
     display: flex;
     flex-direction: row;
     height: 90%;
@@ -76,7 +88,7 @@ input::placeholder {
 .mypages {
     text-align: center;
     padding: 20px;
-    background: linear-gradient( blue, black);
+    background: linear-gradient( rgb(73, 188, 255), black);
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -111,9 +123,8 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 100%;
-    height: 95%;
-    background: linear-gradient( blue, black);
+    background: linear-gradient( rgb(73, 188, 255), black);
+    height: 100%;
 }
 
 .divForm {
@@ -121,14 +132,11 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 5px;
-    float: left;
     margin: 10px;
     width: 20%;
-    height: 40%;    
-    box-sizing: border-box;
-    background-color: #232db954;
+    height: auto;    
+    background-color: #232db9;
     box-shadow: 2px 2px 20px 4px black, 2px 2px 20px 4px black;
     border-radius: 20px;
 }
@@ -141,25 +149,25 @@ input::placeholder {
     padding: 5px;
     margin: 10px;
     margin-bottom: 15px;
+    height: 100%;
 }
 
 .form textarea,
 .form button,
 .form input{
-    border-style: solid;
     width: 100%;
     padding: 5px;
     margin: 10px;
+    border: 2px solid black;
     box-sizing: border-box;
     border-radius: 10px;
-    border-color: blue;
-    background: rgb(255, 255, 255)
+    background: rgb(255, 255, 255);
 }
 
 .form button:hover{
     cursor: pointer;
     transform: scale(1.05);
-    background: radial-gradient(#fff, blue);
+    background: radial-gradient( rgb(73, 188, 255), black);
     box-shadow: 2px 2px 20px 4px black, 2px 2px 20px 4px black;
     
 }
