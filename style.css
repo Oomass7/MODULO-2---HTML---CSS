@@ -36,8 +36,6 @@ input::placeholder {
 .navigation ul{
     list-style-type: none;
     text-align: center;
-    border-radius: 10px;
-    border: 2px solid white;
     padding: 0;
     margin: 0;
     padding: 5px;
@@ -54,6 +52,7 @@ input::placeholder {
 
 .navigation li:hover {
     background: radial-gradient( rgb(73, 188, 255), black);
+    box-shadow: 2px 2px 20px 1px white, -2px -2px 20px 1px white;
     transform: scale(1.05);
 }
 
@@ -162,6 +161,10 @@ input::placeholder {
     box-sizing: border-box;
     border-radius: 10px;
     background: rgb(255, 255, 255);
+}
+
+.form button {
+    background-color: gray;
 }
 
 .form button:hover{
