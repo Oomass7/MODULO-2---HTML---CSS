@@ -25,7 +25,6 @@ body {
 }
 a {
     text-decoration: none;
-    color: black;
 }
 .myimage {
     padding: 10px;
@@ -72,12 +71,14 @@ a {
     align-items: center;
     justify-content: center;
     padding: 5px;
-    border-style: double;
     float: left;
     margin: 10px;
     width: 20%;        
     min-height: 300px;    
     box-sizing: border-box;
+    background-color: #000000;
+    box-shadow: 2px black;
+    border-radius: 20px;
 }
 
 .form {
@@ -92,36 +93,26 @@ a {
 .form textarea,
 .form button,
 .form input{
-    border-style: groove;
+    border-style: solid;
     width: 100%;
     padding: 5px;
     margin: 10px;
     box-sizing: border-box;
+    border-radius: 10px;
+    border-color: blue;
+    background: rgb(211, 97, 53)
 }
 
 .form button:hover{
-    background-color: rgb(90, 90, 90);
     cursor: pointer;
     transform: scale(1.05);
-}
-
-.networks {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    border-style: double;
-    float: left;
-    margin: 10px;
-    width: 20%;        
-    min-height: 300px;    
-    box-sizing: border-box;
+    background: radial-gradient(#fff, blue);
+    box-shadow: 1px 2px #7c7c7c;
+    
 }
 
 .networks a {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     padding: 5px;
     margin: 10px;
 }
