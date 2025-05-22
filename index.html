@@ -3,24 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>About me</title>    
+    <link rel="stylesheet" href="./style.css"> <!--Aqui llamamos el archivo de los stilos para que los agregue-->
 </head>
 
 <body>
-    <nav class="navigation">
-        <ul>
-            <li><a href="./index.html">About me</a></li>
-            <li><a href="./myPages.html">My pages</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!--Utilizamos un header para apartar la barra de navegacion del contenido de la pagina-->
+    <header>
+        <nav class="navigation">
+            <!--Creamos una lista en la que pondremos links que nos llevaran a diferentes apartados de la pagina-->
+            <ul>
+                <li><a href="./index.html">About me</a></li>
+                <li><a href="./myPages.html">My projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Creamos un div para hacer una division en la que tendremos el contenido de la pagina-->
     <div class="aboutme">
         <div class="text">
-            <h1>About Tomas Loaiza</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, sapiente magni cum veritatis facilis necessitatibus, corporis alias recusandae doloremque numquam culpa? Corporis, eaque consequuntur voluptatum dolore fugiat dignissimos fuga beatae!</p>
+            <h1>Tomas Loaiza - Software developer</h1>
+            <p>I am a software developer student. I like learn new technologies, and practice my abilities</p>
+            <ul class="abilities">
+                <li>I am happy</li>
+                <li>I am responsible</li>
+                <li>I am dedicated</li>
+                <li>I like to work in team </li>
+                <li>I like to be sociable </li>
+                <li>I am empathetic</li>
+                <li>I learn very fast</li>
+            </ul>
         </div>
-        <img src="./images/Gemini_Generated_Image_hgx6i4hgx6i4hgx6.png" class="myimage">
+        <img src="./images/Gemini_Generated_Image_hgx6i4hgx6i4hgx6.png" class="myimage">   
     </div>
+    <!--Creamos un footer para separarlo del contenido de la pagina-->
+    <footer>
+        <!--Y en este apartado pondremos datos de la persona que creo la pagina web o derechos de autor-->
+        <div class="foot">
+            <b>
+                <p>Page created for Jose Tomas Loaiza Rodriguez</p>
+                <p>2025</p>
+            </b>
+        </div>
+    </footer>
 </body>
 </html>
