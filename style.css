@@ -52,6 +52,10 @@ a {
     transform: scale(1.05);
 }
 
+.maincontent {
+    height: 100%;
+}
+
 .aboutme {
     text-align: left;
     gap: 20px;  
@@ -59,7 +63,7 @@ a {
     background: linear-gradient( rgb(73, 188, 255), black);
     display: flex;
     flex-direction: row;
-    height: 90%;
+    height: 100%;
 }
 
 .abilities {
