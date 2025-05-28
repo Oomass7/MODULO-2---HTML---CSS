@@ -119,17 +119,29 @@ a {
 .activityCV{
     border: 2px solid #fff;
     border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.project {
+    margin: 0 20px;
+}
+
+.project p {
     max-width: 250px;
 }
 
-.activityCV a{
-    color: aliceblue;
+.project a {
+    display: block;
 }
 
-.activityCV:hover{
+.project img:hover {
     transform: scale(1.08);
     box-shadow: 2px 2px 30px 2px #000000, -2px -2px 30px 2px #000000;
 }
+
+
 
 .divfather {
     display: flex;
@@ -209,4 +221,5 @@ input::placeholder {
     transform: scale(1.05);
     box-shadow: 2px 2px 20px 4px black, 2px 2px 20px 4px black;
 }
+
 
